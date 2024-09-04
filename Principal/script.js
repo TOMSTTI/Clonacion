@@ -1,5 +1,19 @@
-// Toggle sidebar visibility
-// Toggle sidebar visibility
+window.addEventListener('load', function() {
+
+    setTimeout(function() {
+    
+        document.querySelector('.loading-screen').style.display = 'none';
+      
+        document.querySelector('.content').style.display = 'block';
+        document.querySelector('.sidebar').style.display = 'block';
+        document.querySelector('.menu-item').style.display = 'block';
+                
+
+    }, 3000); 
+});
+
+
+
 document.getElementById('menu-icon').addEventListener('click', function() {
     const sidebar = document.getElementById('sidebar');
     const sideBar = document.getElementById('side-bar');
@@ -9,7 +23,7 @@ document.getElementById('menu-icon').addEventListener('click', function() {
     mainContent.style.marginLeft = isSidebarHidden ? '15px' : '250px';
 });
 
-// Toggle submenu visibility
+
 document.getElementById('more-btn').addEventListener('click', function() {
     const submenu = document.getElementById('more-submenu');
     submenu.style.display = submenu.style.display === 'none' ? 'block' : 'none';
@@ -20,12 +34,9 @@ document.getElementById('categories-btn').addEventListener('click', function() {
     submenu.style.display = submenu.style.display === 'none' ? 'block' : 'none';
 });
 
-// Toggle star state
 function toggleStar(element) {
     element.classList.toggle('starred');
 }
-/* scroll bar*/
-
 
 document.getElementById('scroll-container').addEventListener('scroll', function() {
     if (this.scrollTop + this.offsetHeight >= this.scrollHeight) {

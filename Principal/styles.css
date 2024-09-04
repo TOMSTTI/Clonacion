@@ -23,7 +23,7 @@ body {
     margin: 110% ;
     border-radius: 150%;
     background-color: #a700b3;
-    text-align: right;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,9 +175,9 @@ body {
     transform: translateX(0); /* Muestra la barra cuando se cierra el menú */
 }
 
-.icon-container {
-    width: 20px; /* Ajusta al tamaño de tus iconos */
-    height: 20px; /* Ajusta al tamaño de tus iconos */
+.icon-container { /* Ajusta al tamaño iconos */
+    width: 20px; 
+    height: 20px; 
     margin-bottom: 10px;
     background-size: cover;
     background-position: center;
@@ -258,3 +258,8 @@ body {
   #scroll-container.hidden-scroll {
     overflow-y: hidden;
   }
+ a{
+    text-decoration: none;
+    color: #000;
+
+}

@@ -3,39 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gmail Clone</title>
+    <title>Gmail</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" type="image/x-icon">
 </head>
 <body>
+    <div class="loading-screen">
+        <div class="logo-container">
+            <img src="../Img/Gmail.png" alt="Gmail Logo" class="logo">
+        </div>
+        <div class="loading-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <div class="content">
     <div class="header">
         <div class="menu-icon" id="menu-icon">&#9776;</div>
-        <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png" alt="Gmail Logo">
-        <input type="text" placeholder="Search mail">
+        <img src="../Img/Gmail.png" alt="Gmail Logo"><a href="../Pantalla_Carga/Pantalla_Carga.html" class="linea">Gmail</a>
+        <input type="text" placeholder="Buscar correo">
     </div>
 
     <table class="tab-list ">
         <tr>
             <td class="tab-item" role="heading" aria-level="3">
                 <div class="tab-content" tabindex="0" role="tab" aria-selected="true" aria-controls="principal" aria-label="Principal">
-                    <div class="tab-label">Principal</div>
+                    <div class="tab-label"><a href="../Principal/index.html">Principal</a></div>
                 </div>
             </td>
             <td class="tab-item" role="heading" aria-level="3">
                 <div class="tab-content" tabindex="0" role="tab" aria-selected="false" aria-controls="promociones" aria-label="Promociones">
                     <div class="new-count">3 nuevos</div>
-                    <div class="tab-label">Promociones</div>
+                    <div class="tab-label"><a href="../Promociones/Promociones.html">Promociones</a></div>
                 </div>
             </td>
             <td class="tab-item" role="heading" aria-level="3">
                 <div class="tab-content" tabindex="0" role="tab" aria-selected="false" aria-controls="social" aria-label="Social">
                     <div class="new-count">1 nuevo</div>
-                    <div class="tab-label">Social</div>
+                    <div class="tab-label"><a href="../Social/Social.html">Social</a></div>
                 </div>
             </td>
             <td class="tab-item" role="heading" aria-level="3">
                 <div class="tab-content" tabindex="0" role="tab" aria-selected="false" aria-controls="notificaciones" aria-label="Notificaciones">
-                    <div class="tab-label">Notificaciones</div>
+                    <div class="tab-label"><a href="../Notificaciones/Notificaciones.html">Notificaciones</a></div>
                 </div>
             </td>
         </tr>
@@ -44,7 +53,7 @@
 
 
     <aside class="sidebar" id="sidebar">
-        <div style="height: 500px; overflow-y: scroll;">
+        <div style="height: 500px; overflow-y: hidden;">
             <button class="menu-item">
                 <div class="icon-container" id="icon-recibidos"></div>
                 <span class="title">Recibidos</span>
@@ -895,7 +904,7 @@
             </div>
             
     </div>
-    
+</divclass>
     <script src="script.js"></script>
 </body>
 </html>
