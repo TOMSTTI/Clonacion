@@ -1,7 +1,9 @@
 window.addEventListener('load', function() {
-    // Simula un tiempo de carga de 3 segundos
+    // Mantén la pantalla de carga visible por un tiempo definido (por ejemplo, 2 segundos)
     setTimeout(function() {
-        // Redirige a otro index.html
-
-    }, 3000);
+        // Oculta la pantalla de carga
+        document.querySelector('.loading-screen').style.display = 'none';
+        // Muestra el contenido principal
+        document.querySelector('.content').style.display = 'block';
+    }, 2000); // Temporizador de 2 segundos
 });
